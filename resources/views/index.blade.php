@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
                             <div class="hero__img" data-animation="bounceIn" data-delay=".4s">
-                                <img src="{{ Voyager::image($slider->pic) }}" alt="" class=" heartbeat">
+                                <img src="{{ Voyager::image($slider->pic) }}" alt="" class=" heartbeat" style="width: 300px;">
                             </div>
                         </div>
                     </div>
@@ -215,5 +215,9 @@
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <!-- Shop Method End--> --}}
+=======
+    <!-- Shop Method End-->
+>>>>>>> shop_yuirice
 @endsection
