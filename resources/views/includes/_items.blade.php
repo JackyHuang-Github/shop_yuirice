@@ -4,7 +4,7 @@
             <div class="popular-img">
                 <img src="{{ Voyager::image($item->getFirstPic()) }}" alt="">
                 <div class="img-cap">
-                    <span>加入購物車</span>
+                    <span>立即訂票</span>
                 </div>
                 <div class="favorit-items">
                     <span class="flaticon-heart"></span>

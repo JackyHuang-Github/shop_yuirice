@@ -111,7 +111,7 @@ h4,
 h5,
 h6 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #0b1c39;
+    color: #2577fd;
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
@@ -2659,7 +2659,7 @@ input:focus {
     line-height: 1.6;
     font-weight: 400;
     margin-bottom: 39px;
-    color: #212025;
+    color: #f8f9fa;
     margin-bottom: 60px;
     padding-right: 50px;
 }
@@ -2687,7 +2687,7 @@ input:focus {
     }
 }
 .slide-bg {
-    background: #f0f0f2;
+    background-image: url('../images/20354880.jpg');
 }
 .slider-active button.slick-arrow {
     position: absolute;

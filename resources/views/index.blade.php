@@ -16,9 +16,9 @@
                                 <h1 data-animation="fadeInLeft" data-delay=".4s" data-duration="2000ms">{{ $slider->title }}</h1>
                                 <p data-animation="fadeInLeft" data-delay=".7s" data-duration="2000ms">{{ $slider->subtitle }}</p>
                                 <!-- Hero-btn -->
-                                <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
+                                {{-- <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
                                     <a href="{{ $slider->url}}" class="btn hero-btn">{{ $slider->url_txt}}</a>
-                                </div>
+                                </div>  --}}
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 d-none d-sm-block">
@@ -34,7 +34,7 @@
     </div>
     <!-- slider Area End-->
     <!-- ? New Product Start -->
-    <section class="new-product-area section-padding30">
+    {{-- <section class="new-product-area section-padding30">
         <div class="container">
             <!-- Section tittle -->
             <div class="row">
@@ -62,7 +62,7 @@
         </div>
     </section>
     <!--  New Product End -->
-    <!--? Gallery Area Start -->
+     <!--? Gallery Area Start -->
     <div class="gallery-area">
         <div class="container-fluid p-0 fix">
             <div class="row">
@@ -93,7 +93,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Gallery Area End -->
     <!--? Popular Items Start -->
     <div class="popular-items section-padding30">
@@ -115,7 +115,7 @@
                             <img src="{{ Voyager::image($item->getFirstPic()) }}" alt="">
                             <div class="img-cap">
                                 <a href="{{url('/addcart/' . $item->id . '/1')}}">
-                                <span>加入購物車</span>
+                                <span>立即購票</span>
                                 </a>
                             </div>
                             <div class="favorit-items">
@@ -123,16 +123,19 @@
                             </div>
                         </div>
                         <div class="popular-caption">
-                            <h3><a href="product_details.html">{{ $item->title }}</a></h3>
-                            <span>$ {{ $item->price_og }}</span>
+                            <h3><a href="{{url($item->chars)}}">{{ $item->title }}</a></h3>
+                            <div><h3>{{ $item->badge }}</h3></div>
+                            <span>票價 {{ $item->price_og }} $</span>
+                            <div>{{ $item->options }}</div>
+
                         </div>
                     </div>
                 </div>
                 @endforeach
-        
+
             </div>
             <!-- Button -->
-            <div class="row justify-content-center">
+        {{--    <div class="row justify-content-center">
                 <div class="room-btn pt-70">
                     <a href="catagori.html" class="btn view-btn1">檢視更多商品</a>
                 </div>
@@ -212,5 +215,5 @@
             </div>
         </div>
     </div>
-    <!-- Shop Method End-->
+    <!-- Shop Method End--> --}}
 @endsection

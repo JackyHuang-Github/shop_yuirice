@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title','商店')
-    
+
 @section('content')
     <!-- Hero Area Start-->
     <div class="slider-area ">
@@ -24,12 +24,12 @@
             <div class="row product-btn justify-content-between mb-40">
                 <div class="properties__button">
                     <!--Nav Button  -->
-                    <nav>                                                      
+                    <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">最新商品</a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> 作品</a>
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">即將上映</a>
+                            {{-- <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"> 作品</a>
                             <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"> 教學 </a>
-                        </div>
+                        </div> --}}
                     </nav>
                     <!--End Nav Button  -->
                 </div>
@@ -37,7 +37,7 @@
                 <div class="grid-list-view">
                 </div>
                 <!-- Select items -->
-                <div class="select-this">
+                {{-- <div class="select-this">
                     <form action="#">
                         <div class="select-itms">
                             <select name="select" id="select1">
@@ -48,7 +48,7 @@
                             </select>
                         </div>
                     </form>
-                </div>
+                </div> --}}
             </div>
             <!-- Nav Card -->
             <div class="tab-content" id="nav-tabContent">
@@ -93,7 +93,7 @@
                             <h6>Secure Payment System</h6>
                             <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-method mb-40">
                             <i class="ti-reload"></i>

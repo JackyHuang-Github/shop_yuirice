@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
-use Eloquent;
 use DB;
+use Eloquent;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,14 +26,14 @@ class DatabaseSeeder extends Seeder
             //UserSeeder::class,
             ArticleSeeder::class,
             // CommentSeeder::class,
-            //ElementSeeder::class,
+            ElementSeeder::class,
             //PortfolioSeeder::class,
             //ContactSeeder::class,
-            //ItemSeeder::class,
+            ItemSeeder::class,
             //OrderSeeder::class,
             //MyDataTypeSeeder::class,
             //MyDataRowSeeder::class,
-           // MyMenuSeeder::class,
+            // MyMenuSeeder::class,
             //MyMenuItemSeeder::class,
             //MyPermissionSeeder::class,
             //MyRoleSeeder::class,

@@ -32,7 +32,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="{{ asset('img/logo/logo.png') }}" alt="">
+                    <img src="{{ asset('img/logo/4.png') }}" alt="" style="width: 128px;">
                 </div>
             </div>
         </div>
@@ -46,12 +46,17 @@
                     <div class="menu-wrapper">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="index.html"><img src="{{ asset('img/logo/logo.png') }}" alt=""></a>
+                            <a href="index.html"><img src="{{ asset('img/logo/4.png') }}" alt="" style="width: 128px;"></a>
                         </div>
                         <!-- Main-menu -->
                         <div class="main-menu d-none d-lg-block">
                             <nav>
-                                {{ menu('frontend','my_menu') }}
+                              @IF (Auth::guest())
+                                  {{ menu('frontend','my_menu') }}
+                              @endif
+                              @IF (Auth::user())
+                                {{ menu('frontend2','my_menu') }}
+                              @endif
                                 {{-- <ul id="navigation">
                                     <li><a href="{{ url('/') }}">Home</a></li>
                                     <li><a href="{{ url('/shop') }}">shop</a></li>
@@ -82,8 +87,8 @@
                             </nav>
                         </div>
                         <!-- Header Right -->
-                        {{ menu('right_up','right_menu') }}
-                        {{-- <div class="header-right">
+                        {{-- {{ menu('right_up','right_menu') }} --}}
+                        <div class="header-right">
                             <ul>
                                 <li>
                                     <div class="nav-search search-switch">
@@ -101,13 +106,13 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
         <!-- Header End -->
     </header>
     <main>
         @yield('content')
     </main>
-    <footer>
+    {{-- <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
             <div class="container">
@@ -117,7 +122,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="{{ asset('img/logo/logo2_footer.png') }}" alt=""></a>
+                                    <a href="index.html"><img src="{{ asset('img/logo/4.png') }}" alt="" style="width: 128px;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -126,8 +131,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    {{ menu('frontend_footer','footer_menu') }}
+                    </div> --}}
+                    {{-- {{ menu('frontend_footer','footer_menu') }} --}}
                     {{-- <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
@@ -167,7 +172,7 @@
                             </div>
                         </div>
                     </div> --}}
-                </div>
+                {{-- </div>
                 <!-- Footer bottom -->
                 <div class="row align-items-center">
                     <div class="col-xl-7 col-lg-8 col-md-7">
@@ -191,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <!-- Footer End-->
+        <!-- Footer End--> --}}
     </footer>
     <!--? Search model Begin -->
     <div class="search-model-box">
