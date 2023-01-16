@@ -111,7 +111,7 @@ h4,
 h5,
 h6 {
     font-family: 'Josefin Sans', sans-serif;
-    color: #0b1c39;
+    color: #2577fd;
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
@@ -189,11 +189,7 @@ a:hover,
 }
 a,
 button {
-<<<<<<< HEAD
     color: #ff2020;
-=======
-    color: #fff;
->>>>>>> shop_yuirice
     outline: medium none;
 }
 button:focus,
@@ -2663,11 +2659,7 @@ input:focus {
     line-height: 1.6;
     font-weight: 400;
     margin-bottom: 39px;
-<<<<<<< HEAD
     color: #f8f9fa;
-=======
-    color: #212025;
->>>>>>> shop_yuirice
     margin-bottom: 60px;
     padding-right: 50px;
 }
@@ -2695,11 +2687,7 @@ input:focus {
     }
 }
 .slide-bg {
-<<<<<<< HEAD
     background-image: url('../images/20354880.jpg');
-=======
-    background-image: url(../images/辣妹.jpg);
->>>>>>> shop_yuirice
 }
 .slider-active button.slick-arrow {
     position: absolute;

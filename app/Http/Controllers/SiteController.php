@@ -93,4 +93,25 @@ class SiteController extends Controller
         }
         return redirect('/contact');
     }
+
+    public function movie_intro()
+    {
+        // //取得最新消息的所有文章
+        // $cgy = Cgy::find(1);
+        // //$articles_news = $cgy->articles()->paginate(5);
+        // $articles_news = Article::where('cgy_id', 1)->paginate(5);
+        // $cgies = Cgy::get();
+        // return view('blog', compact('cgy', 'articles_news', 'cgies'));
+
+        // $item = Item::find();
+ 
+         //取得最新消息的所有文章
+         $cgy = Cgy::find(1);
+         //$articles_news = $cgy->articles()->paginate(5);
+         $articles_news = Article::where('cgy_id', 1)->paginate(5);
+         $cgies = Cgy::get();
+
+        // return view('movie_intro');
+        return view('movie_intro', compact('cgy', 'articles_news', 'cgies'));
+    }
 }

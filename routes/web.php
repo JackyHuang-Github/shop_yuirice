@@ -21,12 +21,13 @@ Route::namespace ('App\Http\Controllers')->group(function () {
     Route::get('/', 'SiteController@index');
     Route::get('/shop', 'SiteController@shop');
     Route::get('/items/{item}', 'SiteController@productDetail');
-    Route::get('/blog', 'SiteController@blog');
-    Route::get('/blog-detail/{article}', 'SiteController@blogDetail');
+    // Route::get('/blog', 'SiteController@blog');
+    // Route::get('/blog-detail/{article}', 'SiteController@blogDetail');
     Route::get('/contact', 'SiteController@contact');
     Route::post('/contacts', 'SiteController@storeContact');
     Route::get('addcart/{item}/{quantity}', 'SiteController@addCart');
     Route::get('cart', 'SiteController@cartPage');
+    Route::get('/movie_intro', 'SiteController@movie_intro');
 });
 
 Route::get('picArray', function () {
